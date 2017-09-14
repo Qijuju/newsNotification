@@ -1,0 +1,261 @@
+.am-list-news-default .am-list .am-list-item-desced{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.myAppNews .am-list>li{
+    border-color: #eaedee;
+}
+.am-list-news-default .am-g{
+    margin-left:auto;
+    margin-right:auto;
+}
+.am-tabs-bd .am-tab-panel *{
+    -webkit-user-drag:none;
+}
+.am-g .am-g{
+    width:auto;
+}
+.myAppNews li{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+.am-list>li{
+    position: relative;
+    display: block;
+    margin-bottom:-1px;
+    background-color:#fff;
+    border:1px solid #dedede;
+    border-width:1px 0;
+}
+.am-g{
+    margin:0 auto;
+}
+li{
+    list-style:none;
+    font-style: normal;
+}
+li{
+    text-align: -webkit-match-parent;
+}
+*{
+    box-sizing: border-box;
+}
+.am-container:after, .am-container:before, .am-g:after, .am-g:before, [class*=am-avg-]:after, [class*=am-avg-]:before{
+    display: table;
+    content: '';
+}
+*,:after,:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.am-list-news-default .am-list .am-list-item-desced .am-list-main, .am-list-news-default .am-list .am-list-item-desced>a, .am-list-news-default .am-list .am-list-item-thumb-top .am-list-main{
+    padding:0;
+}
+.am-tabs-bd .am-tab-panel *{
+    -webkit-user-drag: none;
+}
+h3{
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.am-list-news-default .am-list .am-list-item-desced .am-list-item-text{
+    margin-top: .5em;
+    color: #757575;
+}
+.myAppNews .am-list .am-list-item-text{
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    max-height: 1.3em;
+}
+.am-list-news-default .am-list .am-list-item-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-height: 1.3em;
+}
+.am-list-item-text{
+    font-size: 14px;
+    margin:0px;
+}
+.am-list-news-default .am-list .am-list-item-thumb-bottom-right .am-list-thumb, .am-list-news-default .am-list .am-list-item-thumb-right .am-list-thumb{
+    padding-right:0;
+}
+@media only screen and (max-width: 640px) {
+    .am-list-news-default .am-list-item-thumb-left .am-list-thumb, .am-list-news-default .am-list-item-thumb-right .am-list-thumb{
+        max-height:80px;
+        overflow: hidden;
+    }
+}
+[class*=am-u-]+[class*=am-u-]:last-child{
+    float: right;
+}
+.am-u-sm-4{
+    width:33.33333%;
+}
+.am-list .am-list-item-desced a, .am-list .am-list-item-thumbed a{
+    padding-right:0px;
+}
+a{
+    text-decoration: none;
+}
+a{
+    color: #0e90d2;
+}
+a{
+    background-color: transparent;
+}
+.am-list-news-default .am-list .am-list-thumb img{
+    width:100%;
+    display: block;
+}
+img{
+    vertical-align: middle;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* 栏目 */
+.lanmu{
+    position: absolute;top:0px;left:0px;
+    width:100%;height:120px;background:rgba(0,0,0,.5);
+    z-index: 99;font-size:30px;
+}
+.lanmu .main #st-trigger-effects button{
+    font-size: 1.5em;
+    font-weight:800;
+    background:transparent;
+}
+.lanmu .main #st-trigger-effects button:focus{
+    outline:none;
+}
+/* 轮播图 */
+ul.mySlideshow li{
+    width:100%;
+    -webkit-background-size:100% 100%;
+    background-size:100% 100%;
+    background-position: 0 0;
+}
+/* 列表 */
+.listItem,.listItem.listItemNoImg{
+    width:70%;float: left;padding-right: 20px;
+}
+.listItem img{
+    vertical-align: middle;
+}
+.listItemImg{
+    width:30%;float: left;
+}
+.listItemImg img{
+    width:240px;height:180px;float: right;
+}
+.listItem.listItemNoImg{
+    width:100%;
+}
+ul.list{
+}
+ul.list li{
+    padding:20px;
+    border-bottom:1px solid #9e9e9e;
+}
+/* 阅读数量一栏 */
+.info{
+    display: inline-block;
+    width:24%;
+    text-align: left;
+    padding:0px;
+    margin-top: 20px;
+    color: #757575;
+    font-size: 1.7em;
+}
+.infoImg{
+    text-align: center;
+}
+.fujian{
+    color: #2196F3;
+    cursor: pointer;
+}
+/* 侧滑菜单 */
+nav#menu-2{
+    overflow: auto;
+    font-size:1.5em;
+}
+nav#menu-2 a，h2.icon.icon-stack{
+    font-size: 1.5em;
+}
+h2.mtreeH2{
+    color:#fff;
+}
+/*h2.icon.icon-stack{*/
+    /*font-size:1.5em;*/
+/*}*/
+ul.mtree{
+    border-top:1px solid #f5f5f5;
+}
+ul.mtree li{
+    border-bottom:1px solid #f5f5f5;
+}
+ul.mtree.bubba ul {
+    margin-left: 0;
+}
+ul.mtree.bubba ul li {
+    font-size: 1.0em;
+}
+ul.mtree.bubba li.mtree-node > a:after {
+    content: '›';
+    margin-left: .5em;
+    font-weight: normal;
+}
+ul.mtree.bubba li.mtree-node > a {
+    font-weight: bold;
+    text-transform: upperCase;
+}
+ul.mtree.bubba > li {
+    border-bottom: 1px solid #DDD;
+}
+ul.mtree.bubba > li:last-child {
+    border-bottom: none;
+}
+ul.mtree.bubba li:last-child > a {
+    border: none;
+}
+ul.mtree.bubba > li.mtree-open > a {
+    background: #DDD;
+}
+ul.mtree.bubba li > a:hover {
+    background: #DDD;
+}
+ul.mtree.bubba li.mtree-active > a {
+    background: #FFC000;
+    color: #FFF;
+}
+ul.mtree.bubba a {
+    padding: 15px 0px 15px 1em;
+    font-size: 1.5em;
+}
+ul.mtree.bubba li li > a {
+    padding-left: 2em;
+}
+ul.mtree.bubba li li li > a {
+    padding-left: 3em;
+}
+ul.mtree.bubba li li li li > a {
+    padding-left: 4em;
+}
+ul.mtree.bubba li li li li li > a {
+    padding-left: 5em;
+}
+
+.listItem h2.h2FS{
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+/**/
+.fadeInRight{
+    font-weight:600;
+    font-family:"Microsoft Yi Baiti";
+}

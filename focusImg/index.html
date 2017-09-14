@@ -1,0 +1,431 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="jQuery edSlider plugin">
+	<meta name="keywords" content="HTML,CSS,JavaScript,jquery,plugin,slider">
+	<meta name="author" content="Eduardo Moreno">
+	<title>jQuery edSlider plugin</title>
+
+	<!--轮播-->
+	<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' type='text/css'>
+	<link rel="stylesheet" href="css/edslider.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/animate-custom.css">
+	<link rel="stylesheet" href="css/prism.css">
+	<!--侧滑菜单-->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/icons.css" />
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+	<!--bootstrap-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!--custom-->
+	<link rel="stylesheet" type="text/css" href="css/myStyle.css">
+	<!--[if IE]>
+	<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<!-- 侧滑 -->
+<div id="st-container" class="st-container">
+	<nav class="st-menu st-effect-2" id="menu-2">
+		<h2 class="icon icon-stack h2FS mtreeH2">栏目</h2>
+		<ul class="mtree">
+			<li><a href="#">A</a>
+				<ul>
+					<li><a href="#">01</a></li>
+					<li><a href="#">02</a></li>
+					<li><a href="#">03</a></li>
+					<li><a href="#">04</a></li>
+					<li><a href="#">05</a></li>
+					<li><a href="#">06</a></li>
+					<li><a href="#">07</a></li>
+				</ul>
+			</li>
+			<li><a href="#">B</a>
+				<ul>
+					<li><a href="#">B1</a>
+						<ul>
+							<li><a href="#">b11</a></li>
+							<li><a href="#">b12</a>
+								<ul>
+									<li><a href="#">b121</a></li>
+									<li><a href="#">b122</a>
+										<ul>
+											<li><a href="#">b1221</a></li>
+											<li><a href="#">b1222</a></li>
+											<li><a href="#">b1223</a></li>
+											<li><a href="#">b1224</a></li>
+											<li><a href="#">b1225</a></li>
+										</ul>
+									</li>
+									<li><a href="#">b123</a></li>
+									<li><a href="#">b124</a></li>
+									<li><a href="#">b125</a></li>
+									<li><a href="#">b126</a></li>
+									<li><a href="#">b127</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#">B2</a>
+						<ul>
+							<li><a href="#">B21</a></li>
+							<li><a href="#">B22</a></li>
+							<li><a href="#">B23</a></li>
+						</ul>
+					</li>
+					<li><a href="#">B3</a>
+						<ul>
+							<li><a href="#">B31</a></li>
+							<li><a href="#">B32</a></li>
+							<li><a href="#">B33</a></li>
+							<li><a href="#">B33</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#">C</a></li>
+		</ul>
+	</nav>
+
+	<!-- content push wrapper -->
+	<div class="st-pusher">
+		<div class="st-content">
+			<div class="st-content-inner" >
+				<!-- 栏目-->
+				<div class="lanmu">
+					<div class="main clearfix">
+						<div id="st-trigger-effects">
+							<button data-effect="st-effect-2">栏目</button>
+						</div>
+					</div>
+				</div>
+				<!-- banner图 -->
+				<ul class="mySlideshow">
+					<li class="first">
+						<a href="" target="_blank" class="animated fadeInLeft">
+							<img src="images/hd-logo.png" width="330" height="255" alt="Harley-Davidson">
+						</a>
+						<div class="animated fadeInRight">图像文本信息</div>
+					</li>
+					<li class="second">
+						<div class="animated fadeInRight">图像文本信息图像文本信息图像文本信息图像文本信息</div>
+					</li>
+					<li class="third">
+						<div class="animated fadeInRight">图像文本信息</div>
+					</li>
+					<li class="fourth">
+						<div class="animated fadeInRight">图像文本信息</div>
+					</li>
+					<li class="fifth">
+						<div class="animated fadeInRight">知道这里是家</div>
+					</li>
+				</ul>
+				<!-- 列表 -->
+				<div class="">
+					<div class="">
+						<ul class="list">
+							<li class="clearfix">
+								<div class="listItem">
+									<h2 class="h2FS">The Digitally-Fabricated Version of a Map With Red Pins In It</h2>
+									<div class="">
+										<span class="info">综合管理部</span>
+										<span class="info">2016-10-29</span>
+										<span class="info infoImg">
+											<img src="images/yuedu.png" alt="阅读数量"><span>&nbsp;n次</span>
+										</span>
+										<span class="info infoImg">
+											<img src="images/fujian.png" alt="附件"><span class="fujian">&nbsp;附件</span>
+										</span>
+									</div>
+								</div>
+								<div class="listItemImg clearfix">
+									<img src="images/c1.jpg" alt="缩略图">
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class="listItem listItemNoImg">
+									<h2 class="h2FS">The Digitally-Fabricated Version of a Map With Red Pins In It</h2>
+									<div class="">
+										<span class="info">综合管理部</span>
+										<span class="info">2016-10-29</span>
+										<span class="info infoImg">
+											<img src="images/yuedu.png" alt="阅读数量"><span>&nbsp;n次</span>
+										</span>
+										<span class="info infoImg">
+											<img src="images/fujian.png" alt="附件"><span class="fujian">&nbsp;附件</span>
+										</span>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.edslider.js"></script>
+<script src="js/prism.js"></script>
+
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/sidebarEffects.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.mySlideshow').edslider({
+            width : '100%',
+            height: '500px'
+        });
+    });
+</script>
+
+<script src='js/stopExecutionOnTimeout.js?t=1'></script>
+<script src='js/jquery.velocity.min.js'></script>
+<script>
+    (function ($, window, document, undefined) {
+        if ($('ul.mtree').length) {
+            var collapsed = true;
+            var close_same_level = false;
+            var duration = 400;
+            var listAnim = true;
+            var easing = 'easeOutQuart';
+            $('.mtree ul').css({
+                'overflow': 'hidden',
+                'height': collapsed ? 0 : 'auto',
+                'display': collapsed ? 'none' : 'block'
+            });
+            var node = $('.mtree li:has(ul)');
+            node.each(function (index, val) {
+                $(this).children(':first-child').css('cursor', 'pointer');
+                $(this).addClass('mtree-node mtree-' + (collapsed ? 'closed' : 'open'));
+                $(this).children('ul').addClass('mtree-level-' + ($(this).parentsUntil($('ul.mtree'), 'ul').length + 1));
+            });
+            $('.mtree li > *:first-child').on('click.mtree-active', function (e) {
+                if ($(this).parent().hasClass('mtree-closed')) {
+                    $('.mtree-active').not($(this).parent()).removeClass('mtree-active');
+                    $(this).parent().addClass('mtree-active');
+                } else if ($(this).parent().hasClass('mtree-open')) {
+                    $(this).parent().removeClass('mtree-active');
+                } else {
+                    $('.mtree-active').not($(this).parent()).removeClass('mtree-active');
+                    $(this).parent().toggleClass('mtree-active');
+                }
+            });
+            node.children(':first-child').on('click.mtree', function (e) {
+                var el = $(this).parent().children('ul').first();
+                var isOpen = $(this).parent().hasClass('mtree-open');
+                if ((close_same_level || $('.csl').hasClass('active')) && !isOpen) {
+                    var close_items = $(this).closest('ul').children('.mtree-open').not($(this).parent()).children('ul');
+                    if ($.Velocity) {
+                        close_items.velocity({ height: 0 }, {
+                            duration: duration,
+                            easing: easing,
+                            display: 'none',
+                            delay: 100,
+                            complete: function () {
+                                setNodeClass($(this).parent(), true);
+                            }
+                        });
+                    } else {
+                        close_items.delay(100).slideToggle(duration, function () {
+                            setNodeClass($(this).parent(), true);
+                        });
+                    }
+                }
+                el.css({ 'height': 'auto' });
+                if (!isOpen && $.Velocity && listAnim)
+                    el.find(' > li, li.mtree-open > ul > li').css({ 'opacity': 0 }).velocity('stop').velocity('list');
+                if ($.Velocity) {
+                    el.velocity('stop').velocity({
+                        height: isOpen ? [
+                            0,
+                            el.outerHeight()
+                        ] : [
+                            el.outerHeight(),
+                            0
+                        ]
+                    }, {
+                        queue: false,
+                        duration: duration,
+                        easing: easing,
+                        display: isOpen ? 'none' : 'block',
+                        begin: setNodeClass($(this).parent(), isOpen),
+                        complete: function () {
+                            if (!isOpen)
+                                $(this).css('height', 'auto');
+                        }
+                    });
+                } else {
+                    setNodeClass($(this).parent(), isOpen);
+                    el.slideToggle(duration);
+                }
+                e.preventDefault();
+            });
+            function setNodeClass(el, isOpen) {
+                if (isOpen) {
+                    el.removeClass('mtree-open').addClass('mtree-closed');
+                } else {
+                    el.removeClass('mtree-closed').addClass('mtree-open');
+                }
+            }
+            if ($.Velocity && listAnim) {
+                $.Velocity.Sequences.list = function (element, options, index, size) {
+                    $.Velocity.animate(element, {
+                        opacity: [
+                            1,
+                            0
+                        ],
+                        translateY: [
+                            0,
+                            -(index + 1)
+                        ]
+                    }, {
+                        delay: index * (duration / size / 2),
+                        duration: duration,
+                        easing: easing
+                    });
+                };
+            }
+            if ($('.mtree').css('opacity') == 0) {
+                if ($.Velocity) {
+                    $('.mtree').css('opacity', 1).children().css('opacity', 0).velocity('list');
+                } else {
+                    $('.mtree').show(200);
+                }
+            }
+        }
+    }(jQuery, this, this.document));
+    $(document).ready(function () {
+        var mtree = $('ul.mtree');
+        mtree.wrap('<div class=mtree-demo></div>');
+        var skins = [
+            'bubba'
+        ];
+        mtree.addClass("bubba");
+//        $('body').prepend('<div class="mtree-skin-selector"><ul class="button-group radius"></ul></div>');
+//        var s = $('.mtree-skin-selector');
+//        $.each(skins, function (index, val) {
+//            s.find('ul').append('<li><button class="small skin">' + val + '</button></li>');
+//        });
+        s.find('ul').append('<li><button class="small csl active">Close Same Level</button></li>');
+        s.find('button.skin').each(function (index) {
+            $(this).on('click.mtree-skin-selector', function () {
+                s.find('button.skin.active').removeClass('active');
+                $(this).addClass('active');
+                mtree.removeClass(skins.join(' ')).addClass(skins[index]);
+            });
+        });
+        s.find('button:first').addClass('active');
+        s.find('.csl').on('click.mtree-close-same-level', function () {
+            $(this).toggleClass('active');
+        });
+
+    });
+</script>
+<!--构造的假数据源-->
+<script>
+    // 列表数据源
+    var dataSource = [{
+        appId: 0,
+        title: 'The Digitally-Fabricated Version of a Map With Red Pins In It',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        appIcon: ['img/c1.jpg'],
+        img:true
+    }, {
+        appId: 1,
+        title: 'Who Knew? The Waterbed Was Invented by an Industrial Design',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        appIcon: ['img/c2.jpg'],
+        img:true
+    }, {
+        appId: 2,
+        title: 'An Interesting UX Design Departure for Mechanical Wristwatches',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        img:false
+    }, {
+        appId: 3,
+        title: 'An Interesting UX Design Departure for Mechanical Wristwatches',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        appIcon: ['img/a1.jpg','img/a3.jpg','img/a8.jpg'],
+        img:true
+    }, {
+        appId: 4,
+        title: 'Who Knew? The Waterbed Was Invented by an Industrial Design',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        img:false
+    }, {
+        appId: 5,
+        title: 'The Digitally-Fabricated Version of a Map With Red Pins In It',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        appIcon: 'img/c3.jpg',
+        img:true
+    }, {
+        appId: 6,
+        title: 'Who Knew? The Waterbed Was Invented by an Industrial Design',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        img:false
+    }, {
+        appId: 7,
+        title: 'The Waterbed Was Invented by an Industrial Design',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        appIcon: 'img/c4.jpg',
+        img:true
+    }, {
+        appId: 8,
+        title: 'The Digitally-Fabricated Version of a Map With Red Pins In It',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        img:false
+    }, {
+        appId: 9,
+        title: 'An Interesting UX Design Departure for Mechanical Wristwatches',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        img:false
+    }, {
+        appId: 10,
+        title: 'The Digitally-Fabricated Version of a Map With Red Pins In It',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        appIcon: 'img/userico.jpg',
+        img:true
+    }, {
+        appId: 11,
+        title: 'An Interesting UX Design Departure for Mechanical Wristwatches',
+        detailInfo:'综合管理部',
+        time:'2016-11-30',
+        img:false
+    },{
+        appId: 12,
+        title: 'documenting your precise travels in 3D space',
+        detailInfo:'综合管理部',
+		time:'2016-11-30',
+        img:false
+    }];
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
