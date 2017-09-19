@@ -8,7 +8,7 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
- var SidebarMenuEffects = (function() {
+(function() {
 
  	function hasParentClass( e, classname ) {
 		if(e === document) return false;
@@ -26,33 +26,57 @@
 	}
 
 	function init() {
-
-		var container = document.getElementById( 'st-container' ),
-			buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) ),
+		var container = document.getElementById( 'st-container' );
+		var	buttons = Array.prototype.slice.call( document.querySelectorAll( '#st-trigger-effects > button' ) );
 			// event type (if mobile use touch events)
-			eventtype = mobilecheck() ? 'touchstart' : 'click',
-			resetMenu = function() {
+        var  eventtype = mobilecheck() ? 'touchstart' : 'click'; // click
+        var resetMenu = function() {
 				classie.remove( container, 'st-menu-open' );
-			},
-			bodyClickFn = function(evt) {
+			};
+        var bodyClickFn = function(evt) {
 				if( !hasParentClass( evt.target, 'st-menu' ) ) {
 					resetMenu();
+                   $( '#st-trigger-effects > button' ).removeEventListener( eventtype, bodyClickFn );
 					document.removeEventListener( eventtype, bodyClickFn );
 				}
 			};
 
 		buttons.forEach( function( el, i ) {
 			var effect = el.getAttribute( 'data-effect' );
-
 			el.addEventListener( eventtype, function( ev ) {
 				ev.stopPropagation();
 				ev.preventDefault();
-				container.className = 'st-container'; // clear
-				classie.add( container, effect );
-				setTimeout( function() {
-					classie.add( container, 'st-menu-open' );
-				}, 25 );
-				document.addEventListener( eventtype, bodyClickFn );
+
+				var classStr = container.className;
+				var testStr = "st-menu-open";
+				if ( classStr.indexOf(testStr) < 0 ){
+                    container.className = 'st-container'; // clear
+                    classie.add( container, effect );
+
+                    setTimeout( function() {
+                        classie.add( container, 'st-menu-open' );
+                    }, 25 );
+                    document.addEventListener( eventtype, bodyClickFn );
+				}else{
+                    // if( !hasParentClass( el.target, 'st-menu' ) ) {
+                    //     resetMenu();
+                    //     el.addEventListener( eventtype, bodyClickFn );
+                    //     document.removeEventListener( eventtype, bodyClickFn );
+                    // }
+                    // container.className = 'st-container'; // clear
+                    // classie.add( container, effect );
+                    // setTimeout( function() {
+                    //     classie.remove( container, 'st-menu-open' );
+                    // }, 25 );
+                    el.addEventListener( eventtype, bodyClickFn );
+                    document.addEventListener( eventtype, bodyClickFn );
+                    // classie.remove( container, 'st-menu-open' );
+				}
+
+
+
+
+
 			});
 		} );
 
